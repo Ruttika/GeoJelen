@@ -10,11 +10,25 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var authLabel: UILabel!
+    @IBOutlet weak var authTextIn: UITextField!
+    @IBOutlet weak var sendBtn: UIButton!
+    @IBOutlet weak var updateBtn: UIButton!
+    
+    var authCode = 6666;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+    
     }
-    //anyad
+    
+    @IBAction func updateBtnPushed(_ sender: Any) {
+        
+        authLabel.text = String(authCode);
+        
+    }
+    
+    
 
 
 }
